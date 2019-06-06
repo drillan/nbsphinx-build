@@ -1,5 +1,5 @@
 FROM driller/nbsphinx-build
 
-COPY ./entrypoint.sh /.
+ADD https://raw.githubusercontent.com/drillan/nbsphinx-build/master/requirements/entrypoint.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
